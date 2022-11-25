@@ -2,11 +2,14 @@
   "name": "lifequote",
   "version": "1.0.0",
   "description": "Quick Life quoting",
+  "homepage": "https://bssrdf.github.io/lifequote",
   "scripts": {
     "build": "webpack --config=webpack.production.config.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "start": "node dev-server.js"
+    "start": "node dev-server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public/build"
   },
   "dependencies": {
     "bootstrap": "3.3.5",
@@ -26,6 +29,8 @@
     "react-transform-catch-errors": "1.0.0",
     "react-transform-hmr": "1.0.1",
     "redbox-react": "1.1.1",
+
+    "gh-pages": "^1.2.0",
 
     "eslint": "1.9.0",
     "babel-eslint": "4.1.4",
