@@ -9,7 +9,7 @@
     "lint:fix": "eslint . --fix",
     "start": "node dev-server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public/build"
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "bootstrap": "3.3.5",
